@@ -103,3 +103,58 @@ export interface IvehicleArr {
     isAvailable: boolean,
     fuel: string
 }
+
+export interface IhotelArr {
+    hotelId: number,
+    name: string,
+    city: string,
+    rating: number,
+    pricePerNight: number,
+    isAvailable: boolean,
+    rooms: number,
+    contact: number
+}
+
+export interface IdoctorArr {
+    doctorId: number,
+    name: string,
+    specialization: string,
+    experience: number,
+    fees: number,
+    isAvailable: boolean,
+    hospital: string,
+    email: string
+}
+
+export interface IrestaurantArr {
+    restId: number;
+    name: string;
+    cuisine: string;
+    city: string;
+    rating: number;
+    avgCost: number;
+    isOpen: boolean;
+    isVeg: boolean;
+}
+
+
+export interface IaccountArr {
+    accNo: number,
+    holderName: string,
+    bank: string,
+    accType: string,
+    balance: number,
+    isActive: boolean,
+    branch: string
+}
+
+export interface IflightArr {
+    flightId: string;
+    airline: string;
+    from: string;
+    to: string;
+    price: number;
+    duration: string;
+    isDirect: boolean;
+    seats: number;
+}

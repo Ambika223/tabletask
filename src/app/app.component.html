@@ -324,3 +324,180 @@
     </div>
   </div>
 </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered text-center bg-secondary">
+        <thead>
+          <tr>
+            <th>HotelId</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Rating</th>
+            <th>PricePerNight</th>
+            <th>IsAvailable</th>
+            <th>Rooms</th>
+            <th>contact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let hotel of hotelArr">
+            <td>{{hotel.hotelId}}</td>
+            <td>{{hotel.name}}</td>
+            <td>{{hotel.city}}</td>
+            <td>{{hotel.rating}}</td>
+            <td>{{hotel.pricePerNight}}</td>
+            <td>{{hotel.isAvailable}}</td>
+            <td>{{hotel.rooms}}</td>
+            <td>{{hotel.contact}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <thead style="background-color: aquamarine;">
+            <tr>
+              <th>DoctorId</th>
+              <th>Name</th>
+              <th>Specialization</th>
+              <th>Experience</th>
+              <th>Fees</th>
+              <th>IsAvailable</th>
+              <th>Hospital</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let doctor of doctorArr">
+              <td>{{doctor.doctorId}}</td>
+              <td>{{doctor.name}}</td>
+              <td>{{doctor.specialization}}</td>
+              <td>{{doctor.experience}}</td>
+              <td>{{doctor.fees}}</td>
+              <td>{{doctor.isAvailable}}</td>
+              <td>{{doctor.hospital}}</td>
+              <td>{{doctor.email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center mt-3"><b>Restaurants Table</b></h3>
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <thead style="background: #cc3030;">
+            <tr>
+              <th>RestId</th>
+              <th>Name</th>
+              <th>Cuisine</th>
+              <th>City</th>
+              <th>Rating</th>
+              <th>AvgCost</th>
+              <th>IsOpen</th>
+              <th>IsVeg</th>
+            </tr>
+          </thead>
+          <tbody style="background: #07d634;">
+            <tr *ngFor="let rest of restaurantArr">
+              <td>{{rest.restId}}</td>
+              <td>{{rest.name}}</td>
+              <td>{{rest.cuisine}}</td>
+              <td>{{rest.city}}</td>
+              <td>{{rest.rating}}</td>
+              <td>{{rest.avgCost}}</td>
+              <td>{{rest.isOpen}}</td>
+              <td>{{rest.isVeg}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center mt-3 bg-info p-3"><b>Bank Table</b></h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped text-center">
+          <thead>
+            <tr>
+              <th>AccNo</th>
+              <th>HolderName</th>
+              <th>bank</th>
+              <th>AccType</th>
+              <th>Balance</th>
+              <th>IsActive</th>
+              <th>Branch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let account of accountArr">
+              <td>{{account.accNo}}</td>
+              <td>{{account.holderName}}</td>
+              <td>{{account.bank}}</td>
+              <td>{{account.accType}}</td>
+              <td>{{account.balance}}</td>
+              <td>{{account.isActive}}</td>
+              <td>{{account.branch}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table table-bordered bg-secondary">
+          <thead>
+            <tr>
+              <th>FlightId</th>
+              <th>Airline</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Price</th>
+              <th>Duration</th>
+              <th>IsDirect</th>
+              <th>Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let flight of flightArr">
+              <td>{{flight.flightId}}</td>
+              <td>{{flight.airline}}</td>
+              <td>{{flight.from}}</td>
+              <td>{{flight.to}}</td>
+              <td>{{flight.price}}</td>
+              <td>{{flight.duration}}</td>
+              <td>{{flight.isDirect}}</td>
+              <td>{{flight.seats}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

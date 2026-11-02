@@ -3,7 +3,7 @@
 
 // // Create table by using following objects (Employees)
 
-import { IbookArr, IcourseArr, IcustomerArr, IempArr, ImovieArr, IorderArr, IproductArr, IstudentArr, IteacherArr, IvehicleArr } from "../modules/table";
+import { IaccountArr, IbookArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IhotelArr, ImovieArr, IorderArr, IproductArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from "../modules/table";
 
 // // 👉  1
 export const empArr: Array<IempArr> = [
@@ -152,65 +152,65 @@ export let vehicleArr: Array<IvehicleArr> = [
 ];
 
 
-// // 👉 11 - Hotels
-// export const hotelArr = [
-//     { hotelId: 1, name: 'Taj Residency', city: 'Mumbai', rating: 4.8, pricePerNight: 12000, isAvailable: true, rooms: 120, contact: 9810011001 },
-//     { hotelId: 2, name: 'The Leela Palace', city: 'Delhi', rating: 4.7, pricePerNight: 15000, isAvailable: true, rooms: 200, contact: 9810011002 },
-//     { hotelId: 3, name: 'ITC Grand', city: 'Chennai', rating: 4.5, pricePerNight: 9500, isAvailable: false, rooms: 150, contact: 9810011003 },
-//     { hotelId: 4, name: 'Oberoi Udaivilas', city: 'Udaipur', rating: 4.9, pricePerNight: 30000, isAvailable: true, rooms: 80, contact: 9810011004 },
-//     { hotelId: 5, name: 'Hyatt Regency', city: 'Pune', rating: 4.3, pricePerNight: 7000, isAvailable: true, rooms: 110, contact: 9810011005 },
-//     { hotelId: 6, name: 'Radisson Blu', city: 'Hyderabad', rating: 4.2, pricePerNight: 6500, isAvailable: true, rooms: 95, contact: 9810011006 },
-//     { hotelId: 7, name: 'Lemon Tree', city: 'Bangalore', rating: 4.0, pricePerNight: 4500, isAvailable: false, rooms: 70, contact: 9810011007 },
-//     { hotelId: 8, name: 'Novotel', city: 'Kolkata', rating: 4.4, pricePerNight: 8000, isAvailable: true, rooms: 130, contact: 9810011008 }
-// ];
+// 👉 11 - Hotels
+export const hotelArr: Array<IhotelArr> = [
+    { hotelId: 1, name: 'Taj Residency', city: 'Mumbai', rating: 4.8, pricePerNight: 12000, isAvailable: true, rooms: 120, contact: 9810011001 },
+    { hotelId: 2, name: 'The Leela Palace', city: 'Delhi', rating: 4.7, pricePerNight: 15000, isAvailable: true, rooms: 200, contact: 9810011002 },
+    { hotelId: 3, name: 'ITC Grand', city: 'Chennai', rating: 4.5, pricePerNight: 9500, isAvailable: false, rooms: 150, contact: 9810011003 },
+    { hotelId: 4, name: 'Oberoi Udaivilas', city: 'Udaipur', rating: 4.9, pricePerNight: 30000, isAvailable: true, rooms: 80, contact: 9810011004 },
+    { hotelId: 5, name: 'Hyatt Regency', city: 'Pune', rating: 4.3, pricePerNight: 7000, isAvailable: true, rooms: 110, contact: 9810011005 },
+    { hotelId: 6, name: 'Radisson Blu', city: 'Hyderabad', rating: 4.2, pricePerNight: 6500, isAvailable: true, rooms: 95, contact: 9810011006 },
+    { hotelId: 7, name: 'Lemon Tree', city: 'Bangalore', rating: 4.0, pricePerNight: 4500, isAvailable: false, rooms: 70, contact: 9810011007 },
+    { hotelId: 8, name: 'Novotel', city: 'Kolkata', rating: 4.4, pricePerNight: 8000, isAvailable: true, rooms: 130, contact: 9810011008 }
+];
 
 // // 👉 12 - Doctors
-// export const doctorArr = [
-//     { doctorId: 1, name: 'Dr. Anil Kapoor', specialization: 'Cardiologist', experience: 15, fees: 1500, isAvailable: true, hospital: 'Apollo', email: 'anil.kapoor@hospital.com' },
-//     { doctorId: 2, name: 'Dr. Sunita Rao', specialization: 'Dermatologist', experience: 10, fees: 1000, isAvailable: true, hospital: 'Fortis', email: 'sunita.rao@hospital.com' },
-//     { doctorId: 3, name: 'Dr. Rajesh Iyer', specialization: 'Neurologist', experience: 18, fees: 2000, isAvailable: false, hospital: 'AIIMS', email: 'rajesh.iyer@hospital.com' },
-//     { doctorId: 4, name: 'Dr. Meera Nair', specialization: 'Pediatrician', experience: 8, fees: 800, isAvailable: true, hospital: 'Manipal', email: 'meera.nair@hospital.com' },
-//     { doctorId: 5, name: 'Dr. Vikram Singh', specialization: 'Orthopedic', experience: 12, fees: 1200, isAvailable: true, hospital: 'Max', email: 'vikram.singh@hospital.com' },
-//     { doctorId: 6, name: 'Dr. Pooja Desai', specialization: 'Gynecologist', experience: 14, fees: 1300, isAvailable: true, hospital: 'Apollo', email: 'pooja.desai@hospital.com' },
-//     { doctorId: 7, name: 'Dr. Suresh Menon', specialization: 'ENT', experience: 9, fees: 900, isAvailable: false, hospital: 'Fortis', email: 'suresh.menon@hospital.com' },
-//     { doctorId: 8, name: 'Dr. Neha Joshi', specialization: 'Dentist', experience: 6, fees: 600, isAvailable: true, hospital: 'Clove', email: 'neha.joshi@hospital.com' }
-// ];
+export const doctorArr: Array<IdoctorArr> = [
+    { doctorId: 1, name: 'Dr. Anil Kapoor', specialization: 'Cardiologist', experience: 15, fees: 1500, isAvailable: true, hospital: 'Apollo', email: 'anil.kapoor@hospital.com' },
+    { doctorId: 2, name: 'Dr. Sunita Rao', specialization: 'Dermatologist', experience: 10, fees: 1000, isAvailable: true, hospital: 'Fortis', email: 'sunita.rao@hospital.com' },
+    { doctorId: 3, name: 'Dr. Rajesh Iyer', specialization: 'Neurologist', experience: 18, fees: 2000, isAvailable: false, hospital: 'AIIMS', email: 'rajesh.iyer@hospital.com' },
+    { doctorId: 4, name: 'Dr. Meera Nair', specialization: 'Pediatrician', experience: 8, fees: 800, isAvailable: true, hospital: 'Manipal', email: 'meera.nair@hospital.com' },
+    { doctorId: 5, name: 'Dr. Vikram Singh', specialization: 'Orthopedic', experience: 12, fees: 1200, isAvailable: true, hospital: 'Max', email: 'vikram.singh@hospital.com' },
+    { doctorId: 6, name: 'Dr. Pooja Desai', specialization: 'Gynecologist', experience: 14, fees: 1300, isAvailable: true, hospital: 'Apollo', email: 'pooja.desai@hospital.com' },
+    { doctorId: 7, name: 'Dr. Suresh Menon', specialization: 'ENT', experience: 9, fees: 900, isAvailable: false, hospital: 'Fortis', email: 'suresh.menon@hospital.com' },
+    { doctorId: 8, name: 'Dr. Neha Joshi', specialization: 'Dentist', experience: 6, fees: 600, isAvailable: true, hospital: 'Clove', email: 'neha.joshi@hospital.com' }
+];
 
 // // 👉 13 - Restaurants
-// export const restaurantArr = [
-//     { restId: 1, name: 'Barbeque Nation', cuisine: 'Barbecue', city: 'Pune', rating: 4.4, avgCost: 1200, isOpen: true, isVeg: false },
-//     { restId: 2, name: 'Haldiram', cuisine: 'North Indian', city: 'Delhi', rating: 4.2, avgCost: 500, isOpen: true, isVeg: true },
-//     { restId: 3, name: 'Paradise Biryani', cuisine: 'Hyderabadi', city: 'Hyderabad', rating: 4.5, avgCost: 700, isOpen: true, isVeg: false },
-//     { restId: 4, name: 'Saravana Bhavan', cuisine: 'South Indian', city: 'Chennai', rating: 4.3, avgCost: 400, isOpen: false, isVeg: true },
-//     { restId: 5, name: 'Leopold Cafe', cuisine: 'Continental', city: 'Mumbai', rating: 4.1, avgCost: 900, isOpen: true, isVeg: false },
-//     { restId: 6, name: 'Karims', cuisine: 'Mughlai', city: 'Delhi', rating: 4.4, avgCost: 600, isOpen: true, isVeg: false },
-//     { restId: 7, name: 'Gujarati Thali House', cuisine: 'Gujarati', city: 'Ahmedabad', rating: 4.0, avgCost: 450, isOpen: true, isVeg: true },
-//     { restId: 8, name: 'Pizza Hub', cuisine: 'Italian', city: 'Bangalore', rating: 3.9, avgCost: 800, isOpen: false, isVeg: false }
-// ];
+export const restaurantArr: Array<IrestaurantArr> = [
+    { restId: 1, name: 'Barbeque Nation', cuisine: 'Barbecue', city: 'Pune', rating: 4.4, avgCost: 1200, isOpen: true, isVeg: false },
+    { restId: 2, name: 'Haldiram', cuisine: 'North Indian', city: 'Delhi', rating: 4.2, avgCost: 500, isOpen: true, isVeg: true },
+    { restId: 3, name: 'Paradise Biryani', cuisine: 'Hyderabadi', city: 'Hyderabad', rating: 4.5, avgCost: 700, isOpen: true, isVeg: false },
+    { restId: 4, name: 'Saravana Bhavan', cuisine: 'South Indian', city: 'Chennai', rating: 4.3, avgCost: 400, isOpen: false, isVeg: true },
+    { restId: 5, name: 'Leopold Cafe', cuisine: 'Continental', city: 'Mumbai', rating: 4.1, avgCost: 900, isOpen: true, isVeg: false },
+    { restId: 6, name: 'Karims', cuisine: 'Mughlai', city: 'Delhi', rating: 4.4, avgCost: 600, isOpen: true, isVeg: false },
+    { restId: 7, name: 'Gujarati Thali House', cuisine: 'Gujarati', city: 'Ahmedabad', rating: 4.0, avgCost: 450, isOpen: true, isVeg: true },
+    { restId: 8, name: 'Pizza Hub', cuisine: 'Italian', city: 'Bangalore', rating: 3.9, avgCost: 800, isOpen: false, isVeg: false }
+];
 
 // // 👉 14 - Banks / Accounts
-// export const accountArr = [
-//     { accNo: 100101, holderName: 'Rohan Verma', bank: 'SBI', accType: 'Savings', balance: 85000, isActive: true, branch: 'Pune' },
-//     { accNo: 100102, holderName: 'Priya Shah', bank: 'HDFC', accType: 'Current', balance: 450000, isActive: true, branch: 'Mumbai' },
-//     { accNo: 100103, holderName: 'Manoj Tiwari', bank: 'ICICI', accType: 'Savings', balance: 23000, isActive: true, branch: 'Delhi' },
-//     { accNo: 100104, holderName: 'Swati Kulkarni', bank: 'Axis', accType: 'Savings', balance: 120000, isActive: false, branch: 'Nagpur' },
-//     { accNo: 100105, holderName: 'Deepak Yadav', bank: 'PNB', accType: 'Current', balance: 310000, isActive: true, branch: 'Lucknow' },
-//     { accNo: 100106, holderName: 'Anita Bose', bank: 'SBI', accType: 'Savings', balance: 56000, isActive: true, branch: 'Kolkata' },
-//     { accNo: 100107, holderName: 'Farhan Ali', bank: 'HDFC', accType: 'Savings', balance: 9500, isActive: true, branch: 'Hyderabad' },
-//     { accNo: 100108, holderName: 'Lata Menon', bank: 'Kotak', accType: 'Current', balance: 275000, isActive: false, branch: 'Kochi' }
-// ];
+export const accountArr: Array<IaccountArr> = [
+    { accNo: 100101, holderName: 'Rohan Verma', bank: 'SBI', accType: 'Savings', balance: 85000, isActive: true, branch: 'Pune' },
+    { accNo: 100102, holderName: 'Priya Shah', bank: 'HDFC', accType: 'Current', balance: 450000, isActive: true, branch: 'Mumbai' },
+    { accNo: 100103, holderName: 'Manoj Tiwari', bank: 'ICICI', accType: 'Savings', balance: 23000, isActive: true, branch: 'Delhi' },
+    { accNo: 100104, holderName: 'Swati Kulkarni', bank: 'Axis', accType: 'Savings', balance: 120000, isActive: false, branch: 'Nagpur' },
+    { accNo: 100105, holderName: 'Deepak Yadav', bank: 'PNB', accType: 'Current', balance: 310000, isActive: true, branch: 'Lucknow' },
+    { accNo: 100106, holderName: 'Anita Bose', bank: 'SBI', accType: 'Savings', balance: 56000, isActive: true, branch: 'Kolkata' },
+    { accNo: 100107, holderName: 'Farhan Ali', bank: 'HDFC', accType: 'Savings', balance: 9500, isActive: true, branch: 'Hyderabad' },
+    { accNo: 100108, holderName: 'Lata Menon', bank: 'Kotak', accType: 'Current', balance: 275000, isActive: false, branch: 'Kochi' }
+];
 
 // // 👉 15 - Flights
-// export const flightArr = [
-//     { flightId: 'AI101', airline: 'Air India', from: 'Delhi', to: 'Mumbai', price: 5500, duration: '2h 10m', isDirect: true, seats: 45 },
-//     { flightId: '6E202', airline: 'IndiGo', from: 'Pune', to: 'Bangalore', price: 3800, duration: '1h 30m', isDirect: true, seats: 60 },
-//     { flightId: 'SG303', airline: 'SpiceJet', from: 'Hyderabad', to: 'Kolkata', price: 4500, duration: '2h 05m', isDirect: true, seats: 30 },
-//     { flightId: 'UK404', airline: 'Vistara', from: 'Mumbai', to: 'Chennai', price: 6200, duration: '1h 55m', isDirect: true, seats: 25 },
-//     { flightId: 'AI505', airline: 'Air India', from: 'Delhi', to: 'Goa', price: 7800, duration: '4h 20m', isDirect: false, seats: 18 },
-//     { flightId: '6E606', airline: 'IndiGo', from: 'Jaipur', to: 'Pune', price: 4100, duration: '2h 00m', isDirect: true, seats: 52 },
-//     { flightId: 'SG707', airline: 'SpiceJet', from: 'Chennai', to: 'Delhi', price: 6900, duration: '2h 50m', isDirect: true, seats: 0 },
-//     { flightId: 'UK808', airline: 'Vistara', from: 'Bangalore', to: 'Mumbai', price: 5100, duration: '1h 45m', isDirect: true, seats: 33 }
-// ];
+export const flightArr: Array<IflightArr> = [
+    { flightId: 'AI101', airline: 'Air India', from: 'Delhi', to: 'Mumbai', price: 5500, duration: '2h 10m', isDirect: true, seats: 45 },
+    { flightId: '6E202', airline: 'IndiGo', from: 'Pune', to: 'Bangalore', price: 3800, duration: '1h 30m', isDirect: true, seats: 60 },
+    { flightId: 'SG303', airline: 'SpiceJet', from: 'Hyderabad', to: 'Kolkata', price: 4500, duration: '2h 05m', isDirect: true, seats: 30 },
+    { flightId: 'UK404', airline: 'Vistara', from: 'Mumbai', to: 'Chennai', price: 6200, duration: '1h 55m', isDirect: true, seats: 25 },
+    { flightId: 'AI505', airline: 'Air India', from: 'Delhi', to: 'Goa', price: 7800, duration: '4h 20m', isDirect: false, seats: 18 },
+    { flightId: '6E606', airline: 'IndiGo', from: 'Jaipur', to: 'Pune', price: 4100, duration: '2h 00m', isDirect: true, seats: 52 },
+    { flightId: 'SG707', airline: 'SpiceJet', from: 'Chennai', to: 'Delhi', price: 6900, duration: '2h 50m', isDirect: true, seats: 0 },
+    { flightId: 'UK808', airline: 'Vistara', from: 'Bangalore', to: 'Mumbai', price: 5100, duration: '1h 45m', isDirect: true, seats: 33 }
+];
 
 // // 👉 16 - Employees Projects
 // export const projectArr = [
