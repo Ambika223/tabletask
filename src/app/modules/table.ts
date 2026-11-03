@@ -169,3 +169,46 @@ export interface IprojectArr {
     isCritical: boolean,
     deadline: string
 }
+
+export interface IcityArr {
+    cityId: number;
+    name: string;
+    state: string;
+    population: number;
+    isMetro: boolean;
+    pincode: number;
+    famousFor: string;
+}
+
+export interface ImobileArr {
+    mobileId: number;
+    brand: string;
+    model: string;
+    price: number;
+    ram: number;
+    storage: number;
+    isAvailable: boolean;
+    os: string;
+}
+
+export interface ImemberArr {
+    memberId: number;
+    name: string;
+    age: number;
+    membership: string;
+    booksIssued: number;
+    isActive: boolean;
+    joinDate: string;
+    email: string;
+}
+
+export interface IgymArr {
+    gymId: number;
+    name: string;
+    age: number;
+    plan: string;
+    fees: number;
+    trainer: string;
+    isActive: boolean;
+    weight: number;
+}

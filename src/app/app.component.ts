@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IaccountArr, IbookArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IhotelArr, ImovieArr, IorderArr, IproductArr, IprojectArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from './modules/table';
-import { accountArr, bookArr, courseArr, customerArr, doctorArr, empArr, flightArr, hotelArr, movieArr, orderArr, productArr, projectArr, restaurantArr, studentArr, teacherArr, vehicleArr } from './const/tabledata';
+import { IaccountArr, IbookArr, IcityArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IgymArr, IhotelArr, ImemberArr, ImobileArr, ImovieArr, IorderArr, IproductArr, IprojectArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from './modules/table';
+import { accountArr, bookArr, cityArr, courseArr, customerArr, doctorArr, empArr, flightArr, gymArr, hotelArr, memberArr, mobileArr, movieArr, orderArr, productArr, projectArr, restaurantArr, studentArr, teacherArr, vehicleArr } from './const/tabledata';
 
 @Component({
   selector: 'app-root',
@@ -25,4 +25,8 @@ export class AppComponent {
   accountArr: Array<IaccountArr> = accountArr;
   flightArr: Array<IflightArr> = flightArr;
   projectArr: Array<IprojectArr> = projectArr;
+  cityArr: Array<IcityArr> = cityArr;
+  mobileArr: Array<ImobileArr> = mobileArr;
+  memberArr: Array<ImemberArr> = memberArr;
+  gymArr: IgymArr[] = gymArr;
 }

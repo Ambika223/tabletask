@@ -3,7 +3,7 @@
 
 // // Create table by using following objects (Employees)
 
-import { IaccountArr, IbookArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IhotelArr, ImovieArr, IorderArr, IproductArr, IprojectArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from "../modules/table";
+import { IaccountArr, IbookArr, IcityArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IgymArr, IhotelArr, ImemberArr, ImobileArr, ImovieArr, IorderArr, IproductArr, IprojectArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from "../modules/table";
 
 // // 👉  1
 export const empArr: Array<IempArr> = [
@@ -225,52 +225,52 @@ export const projectArr: Array<IprojectArr> = [
 ];
 
 // // 👉 17 - Cities
-// export const cityArr = [
-//     { cityId: 1, name: 'Mumbai', state: 'Maharashtra', population: 20400000, isMetro: true, pincode: 400001, famousFor: 'Bollywood' },
-//     { cityId: 2, name: 'Delhi', state: 'Delhi', population: 16800000, isMetro: true, pincode: 110001, famousFor: 'India Gate' },
-//     { cityId: 3, name: 'Bangalore', state: 'Karnataka', population: 12300000, isMetro: true, pincode: 560001, famousFor: 'IT Hub' },
-//     { cityId: 4, name: 'Hyderabad', state: 'Telangana', population: 10000000, isMetro: true, pincode: 500001, famousFor: 'Biryani' },
-//     { cityId: 5, name: 'Pune', state: 'Maharashtra', population: 7400000, isMetro: false, pincode: 411001, famousFor: 'Education' },
-//     { cityId: 6, name: 'Jaipur', state: 'Rajasthan', population: 4100000, isMetro: false, pincode: 302001, famousFor: 'Pink City' },
-//     { cityId: 7, name: 'Kolkata', state: 'West Bengal', population: 14900000, isMetro: true, pincode: 700001, famousFor: 'Sweets' },
-//     { cityId: 8, name: 'Nagpur', state: 'Maharashtra', population: 2900000, isMetro: false, pincode: 440001, famousFor: 'Oranges' }
-// ];
+export const cityArr: Array<IcityArr> = [
+    { cityId: 1, name: 'Mumbai', state: 'Maharashtra', population: 20400000, isMetro: true, pincode: 400001, famousFor: 'Bollywood' },
+    { cityId: 2, name: 'Delhi', state: 'Delhi', population: 16800000, isMetro: true, pincode: 110001, famousFor: 'India Gate' },
+    { cityId: 3, name: 'Bangalore', state: 'Karnataka', population: 12300000, isMetro: true, pincode: 560001, famousFor: 'IT Hub' },
+    { cityId: 4, name: 'Hyderabad', state: 'Telangana', population: 10000000, isMetro: true, pincode: 500001, famousFor: 'Biryani' },
+    { cityId: 5, name: 'Pune', state: 'Maharashtra', population: 7400000, isMetro: false, pincode: 411001, famousFor: 'Education' },
+    { cityId: 6, name: 'Jaipur', state: 'Rajasthan', population: 4100000, isMetro: false, pincode: 302001, famousFor: 'Pink City' },
+    { cityId: 7, name: 'Kolkata', state: 'West Bengal', population: 14900000, isMetro: true, pincode: 700001, famousFor: 'Sweets' },
+    { cityId: 8, name: 'Nagpur', state: 'Maharashtra', population: 2900000, isMetro: false, pincode: 440001, famousFor: 'Oranges' }
+];
 
 // // 👉 18 - Mobile Phones
-// export const mobileArr = [
-//     { mobileId: 1, brand: 'Apple', model: 'iPhone 15', price: 79900, ram: 6, storage: 128, isAvailable: true, os: 'iOS' },
-//     { mobileId: 2, brand: 'Samsung', model: 'Galaxy S24', price: 74999, ram: 8, storage: 256, isAvailable: true, os: 'Android' },
-//     { mobileId: 3, brand: 'OnePlus', model: '12', price: 64999, ram: 12, storage: 256, isAvailable: true, os: 'Android' },
-//     { mobileId: 4, brand: 'Xiaomi', model: 'Redmi Note 13', price: 17999, ram: 8, storage: 128, isAvailable: true, os: 'Android' },
-//     { mobileId: 5, brand: 'Realme', model: 'Narzo 70', price: 14999, ram: 6, storage: 128, isAvailable: false, os: 'Android' },
-//     { mobileId: 6, brand: 'Google', model: 'Pixel 8', price: 75999, ram: 8, storage: 128, isAvailable: true, os: 'Android' },
-//     { mobileId: 7, brand: 'Vivo', model: 'V30', price: 33999, ram: 8, storage: 256, isAvailable: true, os: 'Android' },
-//     { mobileId: 8, brand: 'Oppo', model: 'Reno 11', price: 29999, ram: 8, storage: 128, isAvailable: false, os: 'Android' }
-// ];
+export const mobileArr: Array<ImobileArr> = [
+    { mobileId: 1, brand: 'Apple', model: 'iPhone 15', price: 79900, ram: 6, storage: 128, isAvailable: true, os: 'iOS' },
+    { mobileId: 2, brand: 'Samsung', model: 'Galaxy S24', price: 74999, ram: 8, storage: 256, isAvailable: true, os: 'Android' },
+    { mobileId: 3, brand: 'OnePlus', model: '12', price: 64999, ram: 12, storage: 256, isAvailable: true, os: 'Android' },
+    { mobileId: 4, brand: 'Xiaomi', model: 'Redmi Note 13', price: 17999, ram: 8, storage: 128, isAvailable: true, os: 'Android' },
+    { mobileId: 5, brand: 'Realme', model: 'Narzo 70', price: 14999, ram: 6, storage: 128, isAvailable: false, os: 'Android' },
+    { mobileId: 6, brand: 'Google', model: 'Pixel 8', price: 75999, ram: 8, storage: 128, isAvailable: true, os: 'Android' },
+    { mobileId: 7, brand: 'Vivo', model: 'V30', price: 33999, ram: 8, storage: 256, isAvailable: true, os: 'Android' },
+    { mobileId: 8, brand: 'Oppo', model: 'Reno 11', price: 29999, ram: 8, storage: 128, isAvailable: false, os: 'Android' }
+];
 
 // // 👉 19 - Libraries / Members
-// export const memberArr = [
-//     { memberId: 1, name: 'Aarav Mehta', age: 22, membership: 'Gold', booksIssued: 3, isActive: true, joinDate: '2024-01-15', email: 'aarav@mail.com' },
-//     { memberId: 2, name: 'Diya Sharma', age: 19, membership: 'Silver', booksIssued: 1, isActive: true, joinDate: '2024-03-20', email: 'diya@mail.com' },
-//     { memberId: 3, name: 'Kabir Singh', age: 28, membership: 'Platinum', booksIssued: 5, isActive: true, joinDate: '2023-11-05', email: 'kabir@mail.com' },
-//     { memberId: 4, name: 'Ishita Roy', age: 25, membership: 'Gold', booksIssued: 2, isActive: false, joinDate: '2023-07-12', email: 'ishita@mail.com' },
-//     { memberId: 5, name: 'Vihaan Kulkarni', age: 31, membership: 'Silver', booksIssued: 0, isActive: true, joinDate: '2025-02-01', email: 'vihaan@mail.com' },
-//     { memberId: 6, name: 'Myra Pillai', age: 21, membership: 'Gold', booksIssued: 4, isActive: true, joinDate: '2024-09-18', email: 'myra@mail.com' },
-//     { memberId: 7, name: 'Arjun Reddy', age: 35, membership: 'Platinum', booksIssued: 6, isActive: true, joinDate: '2022-05-25', email: 'arjun@mail.com' },
-//     { memberId: 8, name: 'Saanvi Das', age: 18, membership: 'Silver', booksIssued: 2, isActive: false, joinDate: '2025-06-30', email: 'saanvi@mail.com' }
-// ];
+export const memberArr: Array<ImemberArr> = [
+    { memberId: 1, name: 'Aarav Mehta', age: 22, membership: 'Gold', booksIssued: 3, isActive: true, joinDate: '2024-01-15', email: 'aarav@mail.com' },
+    { memberId: 2, name: 'Diya Sharma', age: 19, membership: 'Silver', booksIssued: 1, isActive: true, joinDate: '2024-03-20', email: 'diya@mail.com' },
+    { memberId: 3, name: 'Kabir Singh', age: 28, membership: 'Platinum', booksIssued: 5, isActive: true, joinDate: '2023-11-05', email: 'kabir@mail.com' },
+    { memberId: 4, name: 'Ishita Roy', age: 25, membership: 'Gold', booksIssued: 2, isActive: false, joinDate: '2023-07-12', email: 'ishita@mail.com' },
+    { memberId: 5, name: 'Vihaan Kulkarni', age: 31, membership: 'Silver', booksIssued: 0, isActive: true, joinDate: '2025-02-01', email: 'vihaan@mail.com' },
+    { memberId: 6, name: 'Myra Pillai', age: 21, membership: 'Gold', booksIssued: 4, isActive: true, joinDate: '2024-09-18', email: 'myra@mail.com' },
+    { memberId: 7, name: 'Arjun Reddy', age: 35, membership: 'Platinum', booksIssued: 6, isActive: true, joinDate: '2022-05-25', email: 'arjun@mail.com' },
+    { memberId: 8, name: 'Saanvi Das', age: 18, membership: 'Silver', booksIssued: 2, isActive: false, joinDate: '2025-06-30', email: 'saanvi@mail.com' }
+];
 
 // // 👉 20 - Gym Members
-// export const gymArr = [
-//     { gymId: 1, name: 'Rohit Sharma', age: 27, plan: 'Monthly', fees: 1500, trainer: 'Sandeep', isActive: true, weight: 78 },
-//     { gymId: 2, name: 'Neha Kapoor', age: 24, plan: 'Quarterly', fees: 4000, trainer: 'Priya', isActive: true, weight: 58 },
-//     { gymId: 3, name: 'Varun Joshi', age: 30, plan: 'Yearly', fees: 14000, trainer: 'Sandeep', isActive: true, weight: 85 },
-//     { gymId: 4, name: 'Anjali Verma', age: 22, plan: 'Monthly', fees: 1500, trainer: 'Priya', isActive: false, weight: 54 },
-//     { gymId: 5, name: 'Sagar Patil', age: 33, plan: 'Half Yearly', fees: 8000, trainer: 'Rahul', isActive: true, weight: 90 },
-//     { gymId: 6, name: 'Kriti Rao', age: 26, plan: 'Quarterly', fees: 4000, trainer: 'Rahul', isActive: true, weight: 60 },
-//     { gymId: 7, name: 'Manish Gupta', age: 38, plan: 'Yearly', fees: 14000, trainer: 'Sandeep', isActive: false, weight: 88 },
-//     { gymId: 8, name: 'Pallavi Nair', age: 29, plan: 'Monthly', fees: 1500, trainer: 'Priya', isActive: true, weight: 62 }
-// ];
+export const gymArr: IgymArr[] = [
+    { gymId: 1, name: 'Rohit Sharma', age: 27, plan: 'Monthly', fees: 1500, trainer: 'Sandeep', isActive: true, weight: 78 },
+    { gymId: 2, name: 'Neha Kapoor', age: 24, plan: 'Quarterly', fees: 4000, trainer: 'Priya', isActive: true, weight: 58 },
+    { gymId: 3, name: 'Varun Joshi', age: 30, plan: 'Yearly', fees: 14000, trainer: 'Sandeep', isActive: true, weight: 85 },
+    { gymId: 4, name: 'Anjali Verma', age: 22, plan: 'Monthly', fees: 1500, trainer: 'Priya', isActive: false, weight: 54 },
+    { gymId: 5, name: 'Sagar Patil', age: 33, plan: 'Half Yearly', fees: 8000, trainer: 'Rahul', isActive: true, weight: 90 },
+    { gymId: 6, name: 'Kriti Rao', age: 26, plan: 'Quarterly', fees: 4000, trainer: 'Rahul', isActive: true, weight: 60 },
+    { gymId: 7, name: 'Manish Gupta', age: 38, plan: 'Yearly', fees: 14000, trainer: 'Sandeep', isActive: false, weight: 88 },
+    { gymId: 8, name: 'Pallavi Nair', age: 29, plan: 'Monthly', fees: 1500, trainer: 'Priya', isActive: true, weight: 62 }
+];
 
 // // 👉 21 - Cars (Showroom)
 // export const carArr = [

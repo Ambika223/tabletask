@@ -538,3 +538,144 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+  <h3 class="text-center bg-danger">City Table</h3>
+  <div class="row">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center">
+        <thead>
+          <tr>
+            <th>CityId</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Population</th>
+            <th>IsMetro</th>
+            <th>Pincode</th>
+            <th>FamousFor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let city of cityArr; let i=index">
+            <td>{{i+1}}</td>
+            <td>{{city.name}}</td>
+            <td>{{city.state}}</td>
+            <td>{{city.population}}</td>
+            <td>{{city.isMetro}}</td>
+            <td>{{city.pincode}}</td>
+            <td>{{city.famousFor}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center" style="background-color: coral;">
+          <thead>
+            <tr>
+              <th>MobileId</th>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Price</th>
+              <th>Ram</th>
+              <th>Storage</th>
+              <th>IsAvailable</th>
+              <th>Os</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let mobile of mobileArr;let i=index">
+              <td>{{i+1}}</td>
+              <td>{{mobile.brand}}</td>
+              <td>{{mobile.model}}</td>
+              <td>{{mobile.price}}</td>
+              <td>{{mobile.ram}}</td>
+              <td>{{mobile.storage}}</td>
+              <td>{{mobile.isAvailable}}</td>
+              <td>{{mobile.os}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h3 class="text-center p-3 mt-3 bg-primary">Member Table</h3>
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center" style="background-color: hotpink;">
+          <thead>
+            <tr>
+              <th>MemberId</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Membership</th>
+              <th>BooksIssued</th>
+              <th>IsActive</th>
+              <th>JoinDate</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let member of memberArr; let i=index">
+              <td>{{i+1}}</td>
+              <td>{{member.name}}</td>
+              <td>{{member.age}}</td>
+              <td>{{member.membership}}</td>
+              <td>{{member.booksIssued}}</td>
+              <td>{{member.isActive}}</td>
+              <td>{{member.joinDate}}</td>
+              <td>{{member.email}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table table-bordered text-center" style="background-color:lightgreen;">
+          <thead>
+            <tr>
+              <th>GymId</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Plan</th>
+              <th>Fees</th>
+              <th>Trainer</th>
+              <th>IsActive</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let gym of gymArr;let i=index">
+              <td>{{i+1}}</td>
+              <td>{{gym.name}}</td>
+              <td>{{gym.age}}</td>
+              <td>{{gym.plan}}</td>
+              <td>{{gym.fees}}</td>
+              <td>{{gym.trainer}}</td>
+              <td>{{gym.isActive}}</td>
+              <td>{{gym.weight}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
