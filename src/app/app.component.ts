@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IaccountArr, IbookArr, IcityArr, IcourseArr, IcustomerArr, IdoctorArr, IempArr, IflightArr, IgymArr, IhotelArr, ImemberArr, ImobileArr, ImovieArr, IorderArr, IproductArr, IprojectArr, IrestaurantArr, IstudentArr, IteacherArr, IvehicleArr } from './modules/table';
 import { accountArr, bookArr, cityArr, courseArr, customerArr, doctorArr, empArr, flightArr, gymArr, hotelArr, memberArr, mobileArr, movieArr, orderArr, productArr, projectArr, restaurantArr, studentArr, teacherArr, vehicleArr } from './const/tabledata';
-
+import { DatabindingComponent } from './data-binding/databinding.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
